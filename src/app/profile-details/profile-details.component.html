@@ -1,0 +1,103 @@
+<section class="page-header">
+    <div class="overly"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="content text-center">
+                    <h1 class="mb-3">Detalles del perfil</h1>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-transparent justify-content-center">
+                            <li class="breadcrumb-item"><a routerLink="/">Inicio</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Detalles del perfil</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr class="border-top border-danger mt-0 mb-0">
+<section class="user-dashboard page-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 col-sm-12 col-lg-3">
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link" routerLink="/dashboard">Tablero</a>
+                </div>
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link" routerLink="/order">Pedidos</a>
+                </div>
+                <!-- <div class="nav flex-column nav-pills">
+                    <a class="nav-link" routerLink="/dashboard">Descargas</a>
+                </div> -->
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link" routerLink="/address">Dirección</a>
+                </div>
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link active" routerLink="/profile-details">Detalles del perfil</a>
+                </div>
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link" routerLink="/">Cerrar sesión</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-7 col-sm-12 col-lg-9">
+
+                <div class="tab-pane fade show active" id="settings" role="tabpanel">
+                    <div class="acccount-settings">
+                        <h4 class="mb-4">Información de la cuenta</h4>
+                        <form action="#">
+                            <div class="form-row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Nombres</label>
+                                        <input type="text" class="form-control" placeholder="Pepito">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Apellidos</label>
+                                        <input type="text" class="form-control" placeholder="Pérez">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <label>Nombre mostrado</label>
+                                <input type="text" class="form-control" placeholder="Jassa">
+                                <p class="mt-2">Así se mostrará su nombre en la sección de cuenta y en los comentarios.</p>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label>Dirección de correo electrónico</label>
+                                <input type="text" class="form-control" placeholder="therichposts@gmail.com">
+                            </div>
+                        </form>
+
+                        <form action="#" class="mt-5">
+                            <h4>Cambiar contraseña</h4>
+
+                            <div class="form-group">
+                                <label>Contraseña actual</label>
+                                <input type="password" class="form-control" placeholder="">
+
+                            </div>
+                            <div class="form-group">
+                                <label>Nueva contraseña</label>
+                                <input type="password" class="form-control" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label>Confirmar nueva contraseña</label>
+                                <input type="password" class="form-control" placeholder="">
+                            </div>
+
+                            <a href="#" class="btn btn-dark">Guardar cambios</a>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>

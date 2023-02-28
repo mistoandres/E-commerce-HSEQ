@@ -1,0 +1,87 @@
+<section class="page-header">
+    <div class="overly"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="content text-center">
+                    <h1 class="mb-3">Pedidos</h1>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-transparent justify-content-center">
+                            <li class="breadcrumb-item"><a routerLink="/">Inicio</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Pedidos</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr class="border-top border-danger mt-0 mb-0">
+<section class="user-dashboard page-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 col-sm-12 col-lg-3">
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link" routerLink="/dashboard">Tablero</a>
+                </div>
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link active" routerLink="/order">Pedidos</a>
+                </div>
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link" routerLink="/address">Dirección</a>
+                </div>
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link" routerLink="/profile-details">Detalles del perfil</a>
+                </div>
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link" routerLink="/">Cerrar sesión</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-7 col-sm-12 col-lg-9">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Pedido</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">#01</th>
+                            <td>11 de junio de 2019 </td>
+                            <td>Entregado</td>
+                            <td>30</td>
+                            <td class="text-center"><a routerLink="/order" class="btn btn-dark btn-small">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#02</th>
+                            <td>10 de marzo de 2019</td>
+                            <td>Entregado</td>
+                            <td>50</td>
+                            <td class="text-center"><a routerLink="/order" class="btn btn-dark btn-small">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#03</th>
+                            <td>11 de febrero de 2019</td>
+                            <td>Pendiente</td>
+                            <td>25</td>
+                            <td class="text-center"><a routerLink="/order" class="btn btn-dark btn-small">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#04</th>
+                            <td>11 de julio de 2019</td>
+                            <td>Procesando</td>
+                            <td>56</td>
+                            <td class="text-center"><a routerLink="/order" class="btn btn-dark btn-small">Ver</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

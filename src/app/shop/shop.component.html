@@ -1,0 +1,89 @@
+<section class="page-header">
+  <div class="overly"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="content text-center">
+          <h1 class="mb-3">Cursos</h1>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent justify-content-center">
+              <li class="breadcrumb-item"><a routerLink="/">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Cursos</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="border-top border-danger mt-0 mb-0">
+<section class="products-shop section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+
+        <div class="row">
+          <div class="col-lg-4 col-12 col-md-6 col-sm-6 mb-5"
+            *ngFor="let vid of cursos | paginate: {itemsPerPage: 6, currentPage: page} ">
+            <div class="product">
+
+              <div class="product-wrap">
+                <a routerLink="/product-single"><img class="img-fluid w-100 mb-3 img-first" src="{{vid.thumbnail}}"
+                    alt="product-img" /></a>
+                <a routerLink="/product-single"><img class="img-fluid w-100 mb-3 img-second" src="{{vid.thumbnail2}}"
+                    alt="product-img" /></a>
+              </div>
+
+              <div class="product-hover-overlay">
+                <a href="#"><i class="tf-ion-android-cart"></i></a>
+                <a href="#"><i class="tf-ion-ios-heart"></i></a>
+              </div>
+
+              <div class="product-info">
+                <h2 class="product-title h5 mb-0"><a routerLink="/product-single">{{vid.title}}</a></h2>
+                <span class="price">
+                  {{vid.price}}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pagination-controls class="text-center" (pageChange)="page = $event" previousLabel="Anterior"
+          nextLabel="Siguiente"></pagination-controls>
+      </div>
+      <div class="col-md-3">
+
+        <!-- popular product -->
+        <section class="widget widget-popular mb-5">
+          <h3 class="widget-title mb-4 h4">Cursos populares</h3>
+
+          <a class="popular-products-item media" routerLink="/product-single">
+            <img src="assets/images/3.webp" alt="" class="img-fluid mr-4">
+            <div class="media-body">
+              <h6>Capacitación al Comité de Seguridad Vial</h6>
+              <span class="price">$75.000</span>
+            </div>
+          </a>
+
+          <a class="popular-products-item media" routerLink="/product-single">
+            <img src="assets/images/1.webp" alt="" class="img-fluid mr-4">
+            <div class="media-body">
+              <h6>Curso de Auxiliar de Tránsito</h6>
+              <span class="price">$70.000</span>
+            </div>
+          </a>
+
+          <a class="popular-products-item media" routerLink="/product-single">
+            <img src="assets/images/5.webp" alt="" class="img-fluid mr-4">
+            <div class="media-body">
+              <h6>Curso de Seguridad Vial para Conductores de Servicio Público</h6>
+              <span class="price">$60.000</span>
+            </div>
+          </a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+</section>
